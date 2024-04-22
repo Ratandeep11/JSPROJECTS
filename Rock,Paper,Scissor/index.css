@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font family */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result area styles */
+#your, #computerPick, #computer {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* Styling individual choices */
+#your::before, #computerPick::before, #computer::before {
+    content: attr(id) ": ";
+    font-weight: bold;
+}
+
+/* Styling specific choices */
+#your::after, #computerPick::after, #computer::after {
+    content: "";
+}
+
+/* Specific choice styles */
+#your::after {
+    content: " (Your Choice)";
+    color: #28a745; /* Green */
+}
+
+#computerPick::after {
+    content: " (Computer's Choice)";
+    color: #dc3545; /* Red */
+}

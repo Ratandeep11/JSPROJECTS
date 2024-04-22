@@ -1,0 +1,82 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background gradient */
+body {
+    background: linear-gradient(135deg, #2980b9, #2c3e50);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Form styles */
+.weatherForm {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.cityInput {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #16a085;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1abc9c;
+}
+
+/* Card styles */
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(8, 8, 8, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styles */
+.cityDisplay {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+.tempDisplay,
+.humidityDisplay {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
